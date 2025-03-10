@@ -321,7 +321,7 @@
       </div>
       <div class="modal-body">
         <p>Completa los siguientes datos para crear una cuenta:</p>
-        <form>
+        <form id="formCrearCuenta">
           <div class="mb-3">
             <label for="name" class="form-label">Nombre y Apellido *</label>
             <input type="text" class="form-control" id="name" aria-describedby="name" required placeholder="Ej: Juan Perez" minlength="3" maxlength="200">
@@ -338,13 +338,10 @@
             <label for="exampleInputPassword1" class="form-label">Repetir contraseña *</label>
             <input type="password" class="form-control" id="exampleInputPassword1" required minlength="7">
           </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-primary" form="formCrearCuenta">Enviar</button>
       </div>
     </div>
   </div>
